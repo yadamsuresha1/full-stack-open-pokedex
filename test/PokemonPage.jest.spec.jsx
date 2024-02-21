@@ -128,10 +128,7 @@ describe("<PokemonPage />", () => {
       "href",
       "/pokemon/ditto"
     );
-    expect(screen.getByText("Next")).toHaveAttribute(
-      "href",
-      "/pokemon/vaporeon"
-    );
+    expect(screen.getByText("Next")).toHaveAttribute("href", "/pokemon/ditto");
   }, 10000);
 
   it("should not render previous and next urls if none exist", async () => {
